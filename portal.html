@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dead Drop Portal</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: black;
+            color: lime;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+        input, textarea {
+            background: #111;
+            color: lime;
+            border: 1px solid lime;
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: lime;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>📡 Dead Drop Portal</h2>
+    <form method="POST" action="/submit">
+        <input type="text" name="name" placeholder="Your name..." required><br>
+        <textarea name="message" placeholder="Your message..." rows="4" required></textarea><br>
+        <button type="submit">Drop Message</button>
+    </form>
+</body>
+</html>
